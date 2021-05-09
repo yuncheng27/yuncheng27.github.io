@@ -1,0 +1,438 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<head>
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=http://localhost:4000/warn.html">
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-DNS-Prefetch-Control" content="on">
+<link rel="dns-prefetch" href="http://localhost:4000">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="prefetch" href="http://localhost:4000">
+<link rel="prefetch" href="//www.google-analytics.com">
+
+
+<link rel="prerender" href="http://localhost:4000">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://localhost:4000">
+<meta name="author" content="方雷">
+
+<link rel="stylesheet" href="/css/JSimple.css">
+
+
+<link rel="shortcut icon" href="/images/favicon.png">
+
+
+<title>【项目】http服务器 - Fronna</title>
+
+<meta name="keywords" content="">
+
+<meta name="description " content="一个流浪歌者的遥远故乡">
+
+
+    
+
+    
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="F">F</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <!-- custom single page of menus -->
+        
+        
+        <a href="/help" title="帮助">
+            <i class="fa fa-question-circle"></i>
+            <span>帮助</span>
+        </a>
+        
+    </nav>
+</div>
+
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-sns-qr" href="javascript:"><i class="fa fa-telegram"></i></a>
+</div>
+
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img"></div>
+    <div class="cover-info">
+        
+        <h1 class="cover-siteName">Fronna</h1>
+        <h3 class="cover-siteTitle">致广大而尽精微</h3>
+        <p class="cover-siteDesc">一个流浪歌者的遥远故乡</p>
+        <div class="cover-sns">
+            
+    &nbsp;&nbsp;<div class="btn btn-github">
+        <a href="https://github.com/yuncheng27" target="_blank" title="github" ref="friend">
+            <i class="fa fa-github"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-telegram">
+        <a href="http://t.me/yuncheng27" target="_blank" title="telegram" ref="friend">
+            <i class="fa fa-telegram"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-quora">
+        <a href="https://www.quora.com/profile/fronna" target="_blank" title="quora" ref="friend">
+            <i class="fa fa-quora"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-twitter">
+        <a href="https://twitter.com/yuncheng27" target="_blank" title="twitter" ref="friend">
+            <i class="fa fa-twitter"></i>
+        </a>
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+            <div class="page-title">
+    <ul>
+        <li><a href="/">最近</a></li>
+        
+            
+                <li class="active">
+                    <a href="/categories/Tech" data-name="技术">技术</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Math" data-name="数学">数学</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Finance" data-name="金融">金融</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/SpaceIndustry" data-name="空工">空工</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/NaturalScience" data-name="自科">自科</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Fitness" data-name="健康">健康</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Classical" data-name="音乐">音乐</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Think" data-name="哲思">哲思</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Others" data-name="其他">其他</a>
+                </li>
+            
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <input type="text"
+               readonly="readonly"
+               id="local-search-input-tip"
+               placeholder="按s搜索，alt取消" />
+        <button type="button" disabled="disabled" class="search-form-submit"><i class="fa fa-search"></i></button>
+    </form>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="http://blog.fronna.com"
+                   target="_blank">
+                    <img width="48" src="/images/favicon.png" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="http://blog.fronna.com/about.html"
+                       target="_blank">方雷</a>
+                    <span title="最后编辑于&nbsp;2019-08-19">2019-08-19</span>
+                </p>
+                <p>Don&#39;t cry, Alfred! I need all my courage to die at twenty.</p>
+            </div>
+            <h2 class="post-title">【项目】Http服务器</h2>
+            <div class="post-meta">
+                本文共计3113个字 |
+                您是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <blockquote>
+<p>对于这个HTTP服务器项目，一直都有一点晕，其实它并没有多难</p>
+</blockquote>
+<h2 id="简要介绍"><a href="#简要介绍" class="headerlink" title="简要介绍"></a>简要介绍</h2><p>一个基于HTTP协议的web服务器</p>
+<h2 id="设计框架及实现细节"><a href="#设计框架及实现细节" class="headerlink" title="设计框架及实现细节"></a>设计框架及实现细节</h2><ul>
+<li><p><code>class Util</code></p>
+<ul>
+<li><p><code>static void MakeKV(std::string s, std::string &amp;k, std::string &amp;v)</code>：以:为分割制造键值对</p>
+</li>
+<li><p><code>static std::string IntToString(int &amp;x)</code>：int类型转成string类型</p>
+<ul>
+<li>string to int：<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//C语言形式</span></span><br><span class="line">std::string str;</span><br><span class="line"><span class="keyword">int</span> i = <span class="built_in">atoi</span>(str.<span class="built_in">c_str</span>());</span><br><span class="line"></span><br><span class="line"><span class="comment">//C++11</span></span><br><span class="line">std::string str;</span><br><span class="line"><span class="keyword">int</span> i = std::<span class="built_in">stoi</span>(str);</span><br><span class="line"><span class="comment">//同样, 可以使用 stol(long), stof(float), stod(double) 等</span></span><br></pre></td></tr></table></figure></li>
+<li>int to string：<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//C++11之前，从其他类型转换成string定义一个模板类方法；从string转为其他类型，定义多个重载函数</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;strstream&gt;</span></span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="function">string <span class="title">convertToString</span><span class="params">(<span class="keyword">const</span> T val)</span> </span>&#123;</span><br><span class="line">  string s;</span><br><span class="line">  std::strstream ss;</span><br><span class="line">  ss &lt;&lt; val;</span><br><span class="line">  ss &gt;&gt; s;</span><br><span class="line">  <span class="keyword">return</span> s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">StringToInt</span><span class="params">(<span class="keyword">const</span> string&amp; s)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> val;</span><br><span class="line">  std::strstream ss;</span><br><span class="line">  ss &lt;&lt; s;</span><br><span class="line">  ss &gt;&gt; val;</span><br><span class="line">  <span class="keyword">return</span> val;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//double和long类似</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//C++11中的标准库定义了to_string(val); 可以把任意类型转换成string</span></span><br><span class="line"><span class="keyword">int</span> i = <span class="number">5</span>;</span><br><span class="line">string s = <span class="built_in">to_string</span>(i);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><code>static std::string CodeToDesc(int code)</code></p>
+</li>
+<li><p><code>static std::string SuffixToContent(std::string &amp;suffix)</code></p>
+</li>
+<li><p><code>static std::string CodeToExceptFile(int code)</code></p>
+</li>
+<li><p><code>static int GetFileSize(std::string &amp;except_path)</code></p>
+</li>
+</ul>
+</li>
+<li><p><code>class SocketApi</code></p>
+<ul>
+<li><code>static int Socket()</code></li>
+<li><code>static void Bind(int sock, int port)</code></li>
+<li><code>static void Listen(int sock)</code></li>
+<li><code>static int Accept(int listen_sock, std::string &amp;ip, int &amp;port)</code></li>
+</ul>
+</li>
+<li><p><code>class Http_Response</code></p>
+<ul>
+<li><code>Http_Response():blank(&quot;\r\n&quot;),code(200)</code></li>
+<li><code>int&amp; GetCode()</code></li>
+<li><code>void SetPath(std::string &amp;_path)</code></li>
+<li><code>std::string &amp;GetPath()</code></li>
+<li><code>void SetResourceSize(int rs)</code></li>
+<li><code>int ResourceSize()</code></li>
+<li><code>void MakeStatusLine()</code></li>
+<li><code>void MakeResponseHeader()</code></li>
+</ul>
+</li>
+<li><p><code>class Http_Request</code></p>
+<ul>
+<li><code>Http_Request():blank(&quot;\r\n&quot;),path(WEBROOT),cgi(false)</code></li>
+<li><code>void RequestLineParse()</code> 将一个字符串以空格分割成三个字符串</li>
+<li><code>void UriParse()</code></li>
+<li><code>void HeaderParse()</code></li>
+<li><code>std::string &amp;GetMethod()</code></li>
+<li><code>bool IsMethodLegal()</code></li>
+<li><code>int IsPathLegal(Http_Response *rsp)</code></li>
+<li><code>bool IsNeedContinueRecv()</code></li>
+<li><code>bool IsCgi()</code></li>
+<li><code>int ContentLength()</code></li>
+<li><code>std::string GetParam()</code></li>
+</ul>
+</li>
+<li><p><code>class Connect</code></p>
+<ul>
+<li><code>Connect(int _sock):sock(_sock)</code></li>
+<li><code>int RecvOneLine(std::string &amp;_line)</code></li>
+<li><code>void RecvRequestHeader(std::vector&lt;std::string&gt; &amp;v)</code></li>
+<li><code>void RecvText(std::string &amp;text , int content_length)</code></li>
+<li><code>void SendStatusLine(Http_Response *rsp)</code></li>
+<li><code>void SendResponseHeader(Http_Response *rsp)</code></li>
+<li><code>void SendResponseText(Http_Response *rsp, bool _cgi, bool Search_cgi)</code></li>
+<li><code>void ClearRequest()</code></li>
+<li><code>~Connect()</code></li>
+</ul>
+</li>
+<li><p><code>class Entry</code></p>
+<ul>
+<li><code>static int ProcessNonCgi(Connect *con, Http_Request *rq, Http_Response *rsp)</code></li>
+<li><code>static int ProcessCgi(Connect *con, Http_Request *rq, Http_Response *rsp)</code></li>
+<li><code>static int ProcessResponse(Connect *con, Http_Request *rq, Http_Response *rsp)</code></li>
+<li><code>static void HandlerRequest(int sock)</code></li>
+</ul>
+</li>
+<li><p><code>class Task</code></p>
+<ul>
+<li><code>Task(int _sock, handler_t _handler):sock(_sock),handler(_handler)</code></li>
+<li><code>void Run()</code></li>
+</ul>
+</li>
+<li><p><code>class ThreadPool</code></p>
+<ul>
+<li><code>ThreadPool(int count):max_thread(count),idle_thread(0)</code></li>
+<li><code>void InitThreadPool()</code></li>
+<li><code>void LockTaskQueue()</code></li>
+<li><code>void UnlockTaskQueue()</code></li>
+<li><code>void Idle()</code></li>
+<li><code>void WakeUp()</code></li>
+<li><code>Task PopTask()</code></li>
+<li><code>bool IsTaskQueueEmpty()</code></li>
+<li><code>void PushTask(Task &amp;t)</code></li>
+<li><code>static void *ThreadRoutine(void *arg)</code></li>
+<li><code>~ThreadPool()</code></li>
+</ul>
+</li>
+<li><p><code>class Singleton</code></p>
+<ul>
+<li><code>static ThreadPool *GetInstance()</code></li>
+</ul>
+</li>
+<li><p><code>class HttpServer</code></p>
+<ul>
+<li><code>HttpServer(int _port):port(_port), listen_sock(-1)</code></li>
+<li><code>void InitServer()</code></li>
+<li><code>void Start()</code></li>
+<li><code>~HttpServer()</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><blockquote>
+<p>[1] <a target="_blank" rel="noopener" href="https://blog.csdn.net/gcola007/article/details/78750220">基于c++11的100行实现简单线程池</a></p>
+</blockquote>
+
+            
+                
+
+            
+        </div>
+        <div class="post-tool">
+            <a class="btn-thumbs-up" href="javascript:void(0);" data-cid="52" title="谢谢老板╰(*°▽°*)╯">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i> 打赏
+            </a>
+        </div>
+        
+        <div class="post-tags">标签：
+            
+            <a href="/tags/Proc/">Proc</a>
+            
+            <a href="/tags/HttpServer/">HttpServer</a>
+            
+        </div>
+        
+    </article>
+    
+        <p style="text-align: center">本文代表个人观点，内容仅供参考。若有不恰当之处，望不吝赐教！</p>
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/honjun/hexo-helper-tocbot/css/tocbot.css"><style>
+    .js-toc {
+        width: 200px;
+        height: auto;
+        z-index: 98;
+        background-color: rgba(255,255,255,0);
+        transform: translateX(0);
+        right: 10%;
+        top: 60px;
+        position: fixed;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+  </style><script src="https://cdn.jsdelivr.net/gh/honjun/hexo-helper-tocbot/js/tocbot.js"></script><div class="js-toc"></div><script type="text/javascript">
+    tocbot.init({"enable":true,"contentSelector":".post-content","scrollSmooth":true,"headingSelector":"h1, h2, h3, h4, h5","headingsOffset":45,"scrollSmoothOffset":-45,"tocSelector":".js-toc","ignoreSelector":".js-toc-ignore","linkClass":"toc-link","extraLinkClasses":"","activeLinkClass":"is-active-link","listClass":"toc-list","extraListClasses":"","isCollapsedClass":"is-collapsed","collapsibleClass":"is-collapsible","listItemClass":"toc-list-item","activeListItemClass":"is-active-li","collapseDepth":0,"scrollSmoothDuration":420,"throttleTimeout":50,"positionFixedSelector":null,"positionFixedClass":"is-position-fixed","fixedSidebarOffset":"auto","includeHtml":false,"onClick":false,"orderedList":true,"scrollContainer":null})
+  </script>
+</div>
+
+<script src="/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner" style="text-align: center">
+<div>
+    <p class="hitokoto"></p>
+</div>
+<script type="text/javascript" src="/js/hitokoto.js"></script>
+        <p>
+            <a href="/about"  title="关于">关于</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/help" title="帮助" >帮助</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/links" title="友链">友链</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/sitemap.xml" title="地图">地图</a>
+        </p>
+        <p>
+            本站已建立&nbsp<a href="/timeline" id="siteBuildingTime"></a>&nbsp天，<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="licence">采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议创作</a><br/>
+            ©2019-<span id="cpYear"></span> 基于&nbsp<a href="http://hexo.io" target="_blank" rel="nofollow">Hexo</a>
+            ，主题采用&nbsp&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="bookmark">JSimple</a>
+            ，作者&nbsp<a href="http://blog.fronna.com" target="_blank" rel="friend">方雷</a>
+            ，Hosted by <a href="https://pages.github.com/" target="_blank" rel="nofollow">GitHub Pages</a>
+        </p>
+    </div>
+</footer>
+
+<script src="/js/SimpleCore.js"></script>
+
+
+
+
+</div>
+<!-- search pop -->
+<div class="popup search-popup local-search-popup">
+    <div class="local-search-header clearfix">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+        <div class="local-search-input-wrapper">
+            <input id="local-search-input"
+                   spellcheck="false"
+                   type="text"
+                   autocomplete="off"
+                   placeholder="请输入查询关键词"/>
+        </div>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+<!--
+<link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+-->
+<script>
+    $(function () {
+        var jsi_config = {
+            buildingTime: '08/01/2019',
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            snsQRCode: '/images/sns-qrcode.png',
+            donateImg: '/images/donate-qr.png',
+            localSearch: { dbPath: '' },
+            readMode: 'day'
+        };
+        
+        SimpleCore.init(jsi_config);
+        
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+        
+    });
+</script>
+</body>
+</html>

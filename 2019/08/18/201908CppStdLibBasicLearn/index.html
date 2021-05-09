@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<head>
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=http://localhost:4000/warn.html">
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-DNS-Prefetch-Control" content="on">
+<link rel="dns-prefetch" href="http://localhost:4000">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="prefetch" href="http://localhost:4000">
+<link rel="prefetch" href="//www.google-analytics.com">
+
+
+<link rel="prerender" href="http://localhost:4000">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://localhost:4000">
+<meta name="author" content="方雷">
+
+<link rel="stylesheet" href="/css/JSimple.css">
+
+
+<link rel="shortcut icon" href="/images/favicon.png">
+
+
+<title>c++ 标准库基础学习 - Fronna</title>
+
+<meta name="keywords" content="">
+
+<meta name="description " content="一个流浪歌者的遥远故乡">
+
+
+    
+
+    
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="F">F</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <!-- custom single page of menus -->
+        
+        
+        <a href="/help" title="帮助">
+            <i class="fa fa-question-circle"></i>
+            <span>帮助</span>
+        </a>
+        
+    </nav>
+</div>
+
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-sns-qr" href="javascript:"><i class="fa fa-telegram"></i></a>
+</div>
+
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img"></div>
+    <div class="cover-info">
+        
+        <h1 class="cover-siteName">Fronna</h1>
+        <h3 class="cover-siteTitle">致广大而尽精微</h3>
+        <p class="cover-siteDesc">一个流浪歌者的遥远故乡</p>
+        <div class="cover-sns">
+            
+    &nbsp;&nbsp;<div class="btn btn-github">
+        <a href="https://github.com/yuncheng27" target="_blank" title="github" ref="friend">
+            <i class="fa fa-github"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-telegram">
+        <a href="http://t.me/yuncheng27" target="_blank" title="telegram" ref="friend">
+            <i class="fa fa-telegram"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-quora">
+        <a href="https://www.quora.com/profile/fronna" target="_blank" title="quora" ref="friend">
+            <i class="fa fa-quora"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-twitter">
+        <a href="https://twitter.com/yuncheng27" target="_blank" title="twitter" ref="friend">
+            <i class="fa fa-twitter"></i>
+        </a>
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+            <div class="page-title">
+    <ul>
+        <li><a href="/">最近</a></li>
+        
+            
+                <li class="active">
+                    <a href="/categories/Tech" data-name="技术">技术</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Math" data-name="数学">数学</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Finance" data-name="金融">金融</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/SpaceIndustry" data-name="空工">空工</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/NaturalScience" data-name="自科">自科</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Fitness" data-name="健康">健康</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Classical" data-name="音乐">音乐</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Think" data-name="哲思">哲思</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Others" data-name="其他">其他</a>
+                </li>
+            
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <input type="text"
+               readonly="readonly"
+               id="local-search-input-tip"
+               placeholder="按s搜索，alt取消" />
+        <button type="button" disabled="disabled" class="search-form-submit"><i class="fa fa-search"></i></button>
+    </form>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="http://blog.fronna.com"
+                   target="_blank">
+                    <img width="48" src="/images/favicon.png" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="http://blog.fronna.com/about.html"
+                       target="_blank">方雷</a>
+                    <span title="最后编辑于&nbsp;2019-08-18">2019-08-18</span>
+                </p>
+                <p>Don&#39;t cry, Alfred! I need all my courage to die at twenty.</p>
+            </div>
+            <h2 class="post-title">C++ 标准库基础学习</h2>
+            <div class="post-meta">
+                本文共计4892个字 |
+                您是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <h1 id="C-11新特性"><a href="#C-11新特性" class="headerlink" title="C++11新特性"></a>C++11新特性</h1><h2 id="一致性初始化-Uniform-Initialization-与初值列-Initializer-List"><a href="#一致性初始化-Uniform-Initialization-与初值列-Initializer-List" class="headerlink" title="一致性初始化(Uniform Initialization)与初值列(Initializer List)"></a>一致性初始化(Uniform Initialization)与初值列(Initializer List)</h2><p>C++中初始化一个变量或对象，可以使用小括号、大括号或赋值操作符，容易使人混淆。一致性初始化就是对任何初始化动作，都可以使用相同的语法，即大括号。要注意窄化(narrowing)，即精度降低或造成数值变动，对大括号而言是不可成立的。此外，为了支持用户自定义类型的初值列，C++11提供了<code>class template std::initializer_list&lt;&gt;</code>，用来支持一系列值进行初始化<br><code>std::initializer_list&lt;T&gt;</code>类型对象是一个访问<code>const T</code>类型对象数组的轻量代理对象。与vector不同的是<code>initializer_list</code>在、对象中的元素永远是常量值，我们无法改变它</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;initializer_list&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="class"><span class="keyword">class</span> <span class="title">T</span>&gt;</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">S</span> &#123;</span></span><br><span class="line">    std::vector&lt;T&gt; v;</span><br><span class="line">    <span class="built_in">S</span>(std::initializer_list&lt;T&gt; l) : <span class="built_in">v</span>(l) &#123;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;constructed with a &quot;</span> &lt;&lt; l.<span class="built_in">size</span>() &lt;&lt; <span class="string">&quot;-element list\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">append</span><span class="params">(std::initializer_list&lt;T&gt; l)</span> </span>&#123;</span><br><span class="line">      v.<span class="built_in">insert</span>(v.<span class="built_in">end</span>(), l.<span class="built_in">begin</span>(), l.<span class="built_in">end</span>());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">std::pair&lt;<span class="keyword">const</span> T*, std::<span class="keyword">size_t</span>&gt; <span class="title">c_arr</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> &#123;&amp;v[<span class="number">0</span>], v.<span class="built_in">size</span>()&#125;;  <span class="comment">// 在return语句中复制列表初始化 </span></span><br><span class="line">                                 <span class="comment">// 这里不使用 std::initializer_list</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">templated_fn</span><span class="params">(T)</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    S&lt;<span class="keyword">int</span>&gt; s = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>&#125;; <span class="comment">// 复制列表初始化 </span></span><br><span class="line">    s.<span class="built_in">append</span>(&#123;<span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>&#125;);        <span class="comment">// 函数调用中的列表初始化</span></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;The vector size is now &quot;</span> &lt;&lt; s.<span class="built_in">c_arr</span>().second &lt;&lt; <span class="string">&quot; ints:\n&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> n : s.v)</span><br><span class="line">      std::cout &lt;&lt; n &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;Range-for over brace-init-list: \n&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> x : &#123;<span class="number">-1</span>, <span class="number">-2</span>, <span class="number">-3</span>&#125;) <span class="comment">// the rule for auto makes this ranged-for work</span></span><br><span class="line">      std::cout &lt;&lt; x &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">    std::cout &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> al = &#123;<span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>&#125;;   <span class="comment">// special rule for auto</span></span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; <span class="string">&quot;The list bound to auto has size() = &quot;</span> &lt;&lt; al.<span class="built_in">size</span>() &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//    templated_fn(&#123;1, 2, 3&#125;);     // compiler error! &quot;&#123;1, 2, 3&#125;&quot; is not an expression,</span></span><br><span class="line">    <span class="comment">//                                 // it has no type, and so T cannot be deduced</span></span><br><span class="line"></span><br><span class="line">    templated_fn&lt;std::initializer_list&lt;<span class="keyword">int</span>&gt;&gt;(&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;); <span class="comment">// OK</span></span><br><span class="line">    templated_fn&lt;std::vector&lt;<span class="keyword">int</span>&gt;&gt;(&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;);           <span class="comment">// also OK</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="其他特性"><a href="#其他特性" class="headerlink" title="其他特性"></a>其他特性</h2><ul>
+<li>两个template表达式的闭符之间放一个空格</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;list&lt;<span class="keyword">int</span>&gt; &gt;;    <span class="comment">//C++每个版本中通用</span></span><br><span class="line">vector&lt;list&lt;<span class="keyword">int</span>&gt;&gt;;     <span class="comment">//C++11</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>nullptr 和 std::nullptr_t<br>nullptr会被自动转换为各种指针类型，但不会被转换成为任何整数类型，它拥有基础类型std::nullptr_t，定义于<cstddef></li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span>)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">(<span class="keyword">void</span>*)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">f</span>(<span class="number">0</span>);     <span class="comment">//调用f(int)</span></span><br><span class="line"><span class="built_in">f</span>(<span class="literal">NULL</span>);  <span class="comment">//如何NULL代表0，则调用f(int)；否则就会模棱两可</span></span><br><span class="line"><span class="built_in">f</span>(<span class="literal">nullptr</span>); <span class="comment">//调用f(void*)</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>以auto完成类型自动推导<br>以auto声明变量，其类型会根据其初值被自动推导出来，因此一定需要一个初始化操作</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;string&gt; v;</span><br><span class="line">...</span><br><span class="line"><span class="keyword">auto</span> pos = v.<span class="built_in">begin</span>();  <span class="comment">//pos的类型为 vector&lt;string&gt;::iterator</span></span><br><span class="line"><span class="keyword">auto</span> l = [] (<span class="keyword">int</span> x) -&gt; <span class="keyword">bool</span> &#123;  <span class="comment">// l的类型为一个lambda</span></span><br><span class="line">  ...,                         <span class="comment">// 拿到一个int型，返回一个bool型</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h1 id="STL容器"><a href="#STL容器" class="headerlink" title="STL容器"></a>STL容器</h1><p>C++标准库还提供了一些特殊的容器类——容器适配器(container adapter，包括stack、queue、priority queue)，此外有些类也提供了与容器相仿的接口(如string、bitset和valarray)</p>
+<h2 id="容器的共通能力和共通操作"><a href="#容器的共通能力和共通操作" class="headerlink" title="容器的共通能力和共通操作"></a>容器的共通能力和共通操作</h2><h3 id="三大共通能力"><a href="#三大共通能力" class="headerlink" title="三大共通能力"></a>三大共通能力</h3><ul>
+<li>所有容器提供的都是值语义(value sematics)而不是引用语义(reference sematics)<br>值语义指的是对象的拷贝与原对象无关，就像拷贝 int 一样。C++ 的内置类型(bool/int/double/char)都是值语义，标准库里的 complex&lt;&gt; 、pair&lt;&gt;、vector&lt;&gt;、map&lt;&gt;、string 等等类型也都是值语意，拷贝之后就与原对象脱离关系<br>如果一个type X具有值语义，则：<ul>
+<li>X的size在编译时可以确定</li>
+<li>将X的变量x赋值给y，不需要专门的赋值操作符，简单的bit-wise-copy即可</li>
+<li>当上述赋值发生后，x和y脱离关系：x和y可以独立销毁，其内存也可以独立释放</li>
+</ul>
+</li>
+</ul>
+<p>引用语义(也可称为对象语义)，指的是面向对象意义下对象，对象拷贝是禁止的。例如<a target="_blank" rel="noopener" href="https://github.com/chenshuo/muduo/tree/cpp11">muduo网络库中</a>的thread是对象语义，拷贝一个thread对象并不能让系统增加一个一模一样的线程<br>要在STL中使用到引用语义(不论是因为元素的复制代价太大，还是因为需要在不同集合中共用同一个元素)，就要采用智能指针，避免可能的差错，此外使用reference wrapper也可行</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用class shared_ptr&lt;&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//使用class reference_wrapper&lt;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>元素在容器内有其特定顺序，使用迭代器来遍历<sup>[3]</sup><br>迭代器是连接容器和算法的重要桥梁。STL中容器的迭代器的本质是类对象，其作用类似于数据库中的游标(cursor)，除此之外迭代器也是一种设计模式(迭代器模式详见<a target="_blank" rel="noopener" href="http://blog.fronna.com/Tech/23-Design-Patterns-1566656447.html">23种设计模式</a>)</p>
+</li>
+<li><p>各项操作并非绝对安全，也就是说它们并不会检查每一个可能发生的错误。调用者必须确保传给操作函数的实参符合条件，通常STL自己不会抛出异常(exception)<br>STL的设计宗旨是效能优先，安全次之。错误检查会降低效率，如果你认为安全重于效率，可以增加一层包装(wrapper)，或者使用STL特殊版本，但一旦引入错误检验，想再消除它们提高效率，就没辙了<br>具体地说，使用STL必须满足以下要求：</p>
+<ul>
+<li>迭代器务必合法且有效。如使用之前要初始化；对vector和deque而言，一旦发生元素的插入、删除或重新分配，就会使迭代器无效；对于无序容器而言，一旦发生重新散列(rehashing)，迭代器也会失效</li>
+<li>迭代器如果指向past the end的位置，那么它就不指向任何对象，因此不能对它调用<code>operator *</code>或者<code>operator -&gt;</code>。这一点适用于任何容器的<code>end()</code>、<code>cend()</code>和<code>rend()</code>所返回的迭代器</li>
+<li>区间(range)必须是合法的</li>
+<li>如果涉及的区间不止一个，第二区间及后继各区间必须拥有至少和第一区间一样多的元素</li>
+<li>覆盖(overwritten)动作中的标的区间(destination range)必须拥有足够元素，否则就必须采用插入型迭代器(insert iterator)</li>
+</ul>
+</li>
+</ul>
+<p>析构函数通常不能抛出异常。由于编译器可能的异常处理(过度优化)会引发效率损失，C++11提供了noexcept，表示其修饰的函数不会抛出异常，其原理是如果该函数抛出了异常，编译器可以选择直接调用<code>std::terminate()</code>函数来终止程序的运行，这比基于异常机制的<code>throw()</code>在效率上会高一些(比如函数抛异常，会导致函数栈被依次地展开(stack unwinding)，并依帧调用在本帧中已构造的自动变量的析构函数等)<sup>[4]</sup><br>从语法上讲，noexcept修饰符有两种形式，一种就是简单地在函数声明后加上noexcept关键字<code>void excpt_func() noexcept;</code>；另外一种则可以接受一个常量表达式作为参数<code>void excpt_func() noexcept (常量表达式); </code>。常量表达式的结果会被转换成一个bool型的值，不带常量表达式的noexcept相当于声明了<code>noexcept(true)</code></p>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><blockquote>
+<p>[1] The C++ Standard Library: A Tutorial and Reference, Second Edition. Nicolai M. Josuttis. 侯捷 译. 2015.6<br>[2] <a target="_blank" rel="noopener" href="https://blog.csdn.net/zhc_24/article/details/82156970">值语义，引用语义对比理解</a><br>[3] <a target="_blank" rel="noopener" href="https://blog.csdn.net/K346K346/article/details/81348788">认识C++容器的迭代器</a><br>[4] <a target="_blank" rel="noopener" href="https://blog.csdn.net/LaoJiu_/article/details/50781352">noexcept详细讲解</a><br>[5] <a target="_blank" rel="noopener" href="https://blog.csdn.net/menggucaoyuan/article/details/45869471">使用C++11改造muduo</a></p>
+</blockquote>
+
+            
+                
+
+            
+        </div>
+        <div class="post-tool">
+            <a class="btn-thumbs-up" href="javascript:void(0);" data-cid="52" title="谢谢老板╰(*°▽°*)╯">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i> 打赏
+            </a>
+        </div>
+        
+        <div class="post-tags">标签：
+            
+            <a href="/tags/BasicLearning/">BasicLearning</a>
+            
+            <a href="/tags/CPP/">CPP</a>
+            
+            <a href="/tags/STL/">STL</a>
+            
+        </div>
+        
+    </article>
+    
+        <p style="text-align: center">本文代表个人观点，内容仅供参考。若有不恰当之处，望不吝赐教！</p>
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/honjun/hexo-helper-tocbot/css/tocbot.css"><style>
+    .js-toc {
+        width: 200px;
+        height: auto;
+        z-index: 98;
+        background-color: rgba(255,255,255,0);
+        transform: translateX(0);
+        right: 10%;
+        top: 60px;
+        position: fixed;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+  </style><script src="https://cdn.jsdelivr.net/gh/honjun/hexo-helper-tocbot/js/tocbot.js"></script><div class="js-toc"></div><script type="text/javascript">
+    tocbot.init({"enable":true,"contentSelector":".post-content","scrollSmooth":true,"headingSelector":"h1, h2, h3, h4, h5","headingsOffset":45,"scrollSmoothOffset":-45,"tocSelector":".js-toc","ignoreSelector":".js-toc-ignore","linkClass":"toc-link","extraLinkClasses":"","activeLinkClass":"is-active-link","listClass":"toc-list","extraListClasses":"","isCollapsedClass":"is-collapsed","collapsibleClass":"is-collapsible","listItemClass":"toc-list-item","activeListItemClass":"is-active-li","collapseDepth":0,"scrollSmoothDuration":420,"throttleTimeout":50,"positionFixedSelector":null,"positionFixedClass":"is-position-fixed","fixedSidebarOffset":"auto","includeHtml":false,"onClick":false,"orderedList":true,"scrollContainer":null})
+  </script>
+</div>
+
+<script src="/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner" style="text-align: center">
+<div>
+    <p class="hitokoto"></p>
+</div>
+<script type="text/javascript" src="/js/hitokoto.js"></script>
+        <p>
+            <a href="/about"  title="关于">关于</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/help" title="帮助" >帮助</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/links" title="友链">友链</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/sitemap.xml" title="地图">地图</a>
+        </p>
+        <p>
+            本站已建立&nbsp<a href="/timeline" id="siteBuildingTime"></a>&nbsp天，<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="licence">采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议创作</a><br/>
+            ©2019-<span id="cpYear"></span> 基于&nbsp<a href="http://hexo.io" target="_blank" rel="nofollow">Hexo</a>
+            ，主题采用&nbsp&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="bookmark">JSimple</a>
+            ，作者&nbsp<a href="http://blog.fronna.com" target="_blank" rel="friend">方雷</a>
+            ，Hosted by <a href="https://pages.github.com/" target="_blank" rel="nofollow">GitHub Pages</a>
+        </p>
+    </div>
+</footer>
+
+<script src="/js/SimpleCore.js"></script>
+
+
+
+
+</div>
+<!-- search pop -->
+<div class="popup search-popup local-search-popup">
+    <div class="local-search-header clearfix">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+        <div class="local-search-input-wrapper">
+            <input id="local-search-input"
+                   spellcheck="false"
+                   type="text"
+                   autocomplete="off"
+                   placeholder="请输入查询关键词"/>
+        </div>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+<!--
+<link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+-->
+<script>
+    $(function () {
+        var jsi_config = {
+            buildingTime: '08/01/2019',
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            snsQRCode: '/images/sns-qrcode.png',
+            donateImg: '/images/donate-qr.png',
+            localSearch: { dbPath: '' },
+            readMode: 'day'
+        };
+        
+        SimpleCore.init(jsi_config);
+        
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+        
+    });
+</script>
+</body>
+</html>

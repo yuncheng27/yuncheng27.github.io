@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<head>
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=http://localhost:4000/warn.html">
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-DNS-Prefetch-Control" content="on">
+<link rel="dns-prefetch" href="http://localhost:4000">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="prefetch" href="http://localhost:4000">
+<link rel="prefetch" href="//www.google-analytics.com">
+
+
+<link rel="prerender" href="http://localhost:4000">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://localhost:4000">
+<meta name="author" content="方雷">
+
+<link rel="stylesheet" href="/css/JSimple.css">
+
+
+<link rel="shortcut icon" href="/images/favicon.png">
+
+
+<title>【工具】vim编辑器 - Fronna</title>
+
+<meta name="keywords" content="vim技巧">
+
+<meta name="description " content="vim各种使用技巧，简洁方便的速查手册">
+
+
+    
+
+    
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="F">F</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <!-- custom single page of menus -->
+        
+        
+        <a href="/help" title="帮助">
+            <i class="fa fa-question-circle"></i>
+            <span>帮助</span>
+        </a>
+        
+    </nav>
+</div>
+
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-sns-qr" href="javascript:"><i class="fa fa-telegram"></i></a>
+</div>
+
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img"></div>
+    <div class="cover-info">
+        
+        <h1 class="cover-siteName">Fronna</h1>
+        <h3 class="cover-siteTitle">致广大而尽精微</h3>
+        <p class="cover-siteDesc">一个流浪歌者的遥远故乡</p>
+        <div class="cover-sns">
+            
+    &nbsp;&nbsp;<div class="btn btn-github">
+        <a href="https://github.com/yuncheng27" target="_blank" title="github" ref="friend">
+            <i class="fa fa-github"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-telegram">
+        <a href="http://t.me/yuncheng27" target="_blank" title="telegram" ref="friend">
+            <i class="fa fa-telegram"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-quora">
+        <a href="https://www.quora.com/profile/fronna" target="_blank" title="quora" ref="friend">
+            <i class="fa fa-quora"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-twitter">
+        <a href="https://twitter.com/yuncheng27" target="_blank" title="twitter" ref="friend">
+            <i class="fa fa-twitter"></i>
+        </a>
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+            <div class="page-title">
+    <ul>
+        <li><a href="/">最近</a></li>
+        
+            
+                <li class="active">
+                    <a href="/categories/Tech" data-name="技术">技术</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Math" data-name="数学">数学</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Finance" data-name="金融">金融</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/SpaceIndustry" data-name="空工">空工</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/NaturalScience" data-name="自科">自科</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Fitness" data-name="健康">健康</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Classical" data-name="音乐">音乐</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Think" data-name="哲思">哲思</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/Others" data-name="其他">其他</a>
+                </li>
+            
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <input type="text"
+               readonly="readonly"
+               id="local-search-input-tip"
+               placeholder="按s搜索，alt取消" />
+        <button type="button" disabled="disabled" class="search-form-submit"><i class="fa fa-search"></i></button>
+    </form>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="http://blog.fronna.com"
+                   target="_blank">
+                    <img width="48" src="/images/favicon.png" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="http://blog.fronna.com/about.html"
+                       target="_blank">方雷</a>
+                    <span title="最后编辑于&nbsp;2019-08-11">2019-08-11</span>
+                </p>
+                <p>Don&#39;t cry, Alfred! I need all my courage to die at twenty.</p>
+            </div>
+            <h2 class="post-title">【工具】vim编辑器</h2>
+            <div class="post-meta">
+                本文共计5517个字 |
+                您是第&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <h2 id="Vim图册"><a href="#Vim图册" class="headerlink" title="Vim图册"></a>Vim图册</h2><p>vim常见的命令速查手册</p>
+<ul>
+<li>vi/vim cheat sheet. <a href="/File/2019/viemu-cheatsheet.pdf">PDF版本</a>有更详细的介绍<br><img src="/img/2019/08/vi-vim-cheat-sheet.png" alt="vi/vim cheat sheet"><blockquote>
+<p><strong>移动光标</strong></p>
+<ul>
+<li>Ctrl + y：与Ctrl + e的功能相反，光标向上走</li>
+<li>Ctrl + b：屏幕向后移动一页，Ctrl + f：向前移动一页；Ctrl + u：向后移动半页，Ctrl + d：向前移动半页</li>
+<li>Ctrl + o 、Ctrl + i 与 Ctrl + l 可以实现vim内标签页的左右切换</li>
+<li>连按两下 ‘ 可以调回到上一步操作的地方；连按两下z会使当前行移到屏幕中间</li>
+<li>先按数字，再按方向键，可以跳数字个间隔(上下的单位是行，左右的单位是字符)</li>
+<li>$：行尾；^：行首；#l：光标移到改行第#个位置</li>
+<li>搜狗输入法的简繁切换热键是Ctrl + Shift + F</li>
+</ul>
+<p><strong>删除文字</strong></p>
+<ul>
+<li>x：删除光标所在位置的后面(包括自己)#个字符</li>
+<li>X：删除光标前#个字符</li>
+</ul>
+<p><strong>复制</strong></p>
+<ul>
+<li>yw：将光标所在之处到字尾的字符复制到缓冲区中；#yw：复制#个字到缓冲区</li>
+</ul>
+<p><strong>替换</strong></p>
+<ul>
+<li>r：替换光标所在处的字符。R：替换光标所到处的字符，直到按esc键为止</li>
+</ul>
+<p><strong>撤销上一次操作</strong></p>
+<ul>
+<li>Ctrl + r：撤销的恢复</li>
+</ul>
+<p><strong>更改</strong></p>
+<ul>
+<li>cw：更改光标所在处的字到字尾处</li>
+<li>c#w：表示更改#个字</li>
+</ul>
+<p><strong>跳至指定行</strong></p>
+<ul>
+<li>Ctrl + g：列出光标所在行号的百分比，以及总行号</li>
+<li>G：移动光标至文章的第#行行首</li>
+</ul>
+<p><strong>列出行号</strong></p>
+<ul>
+<li>:set nu；取消行号：:set nonu</li>
+</ul>
+<p><strong>查找字符</strong></p>
+<ul>
+<li>/关键字：找到后按n会从前往后找</li>
+<li>?关键字：找到后按n会从后往前找，但按N又会反方向找</li>
+</ul>
+<p><strong>高亮</strong></p>
+<ul>
+<li>普通模式下按*会高亮与光标所在的词相同的所有词</li>
+</ul>
+<p><strong>分屏</strong></p>
+<ul>
+<li>:vs 新文件或者文路径 垂直分屏；:sv 水平分屏</li>
+<li>vim -o[n] file1,…filen o表示水平分屏，O表示垂直分屏，n表示分屏数</li>
+<li>:only 关闭除当前屏外的其他分屏；:qa 关闭所有分屏；Ctrl + w c 关闭当前分屏</li>
+</ul>
+<p><strong>退出vim</strong></p>
+<ul>
+<li>ZZ：存盘并退出(相当于:wq)；ZQ：无条件退出(相当于:q!)</li>
+<li>Ctrl-z 命令将当前的 Vi/Vim 进程放到后台执行，之后 shell 环境即可为你所用；fg 命令则将位于后台的 Vi/Vim 进程放到前台执行，这样我们就再次进入 Vi/Vim 操作界面并恢复到原先的编辑状态<br>更多出神入化的技巧看第三个参考文献</li>
+</ul>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">1.移动光标</span><br><span class="line">  a. 把光标移到右边的屏中</span><br><span class="line">    ctrl+w l</span><br><span class="line">  b. 把光标移到左边的屏中</span><br><span class="line">    ctrl+w h</span><br><span class="line">  c. 把光标移到上边的屏中</span><br><span class="line">    ctrl+w k</span><br><span class="line">  d. 把光标移到下边的屏中</span><br><span class="line">    ctrl+w j</span><br><span class="line">  e. 把光标移到下一个屏中</span><br><span class="line">    ctrl+w w</span><br><span class="line">  f. 把光标移到上一个屏中</span><br><span class="line">    ctrl+w p</span><br><span class="line">2.移动分屏</span><br><span class="line">  a. 向右移动</span><br><span class="line">    ctrl+w L</span><br><span class="line">  b. 向左移动</span><br><span class="line">    ctrl+w H</span><br><span class="line">  c. 向上移动</span><br><span class="line">    ctrl+w K</span><br><span class="line">  d. 向下移动</span><br><span class="line">    ctrl+w J</span><br><span class="line">  e. 向下旋转窗口</span><br><span class="line">    ctrl+w r</span><br><span class="line">  f. 向上旋转窗口</span><br><span class="line">    ctrl+w R</span><br><span class="line">  g. 当前窗口与下一个窗口对调</span><br><span class="line">    ctrl+w x</span><br><span class="line">3.控制分屏的尺寸</span><br><span class="line">  a. 减少当前窗口高度（对上下分屏才有用）</span><br><span class="line">    ctrl+w -        亲测字体大小会发生变化</span><br><span class="line">  b. 增加当前窗口高度（对上下分屏才有用）</span><br><span class="line">    ctrl+w +      亲测字体大小会发生变化</span><br><span class="line">  c. 增加当前窗口宽度（对左右分屏才有用）</span><br><span class="line">    ctrl+w &gt;      按完ctrl w 后松开,同时按下shift &gt;</span><br><span class="line">  d. 减少当前窗口宽度（对左右分屏才有用）</span><br><span class="line">    ctrl+w &lt;       按完ctrl w 后松开,同时按下shift &lt;</span><br><span class="line">  e. 使所有窗口恢复均等</span><br><span class="line">    ctrl+w =</span><br><span class="line"></span><br><span class="line">4.纵向调整</span><br><span class="line">  :res[ize]  num    指定当前窗口为num列num行</span><br><span class="line">  :res[ize] +num    把当前窗口高度增加num行</span><br><span class="line">  :res[ize] -num    把当前窗口高度减少num行</span><br><span class="line">5.横向调整</span><br><span class="line">  :vert[ical] res[ize]  num   指定当前窗口为num列</span><br><span class="line">  :vert[ical] res[ize] +num   把当前窗口增加num列</span><br><span class="line">  :vert[ical] res[ize] -num   把当前窗口减少num列</span><br></pre></td></tr></table></figure></li>
+<li>beautiful vim cheatsheet.<br><img src="/img/2019/08/beautiful-vim-cheatsheet.png" alt="beautiful vim cheatsheet"></li>
+<li>vim cheatsheet for programmers. <a href="/File/2019/vim-cheatsheet-for-programmers.pdf">PDF版本</a><br><img src="/img/2019/08/vim_cheat_sheet_for_programmers.png" alt="vim cheatsheet for programmers"></li>
+</ul>
+<h2 id="vim的十二种模式"><a href="#vim的十二种模式" class="headerlink" title="vim的十二种模式"></a>vim的十二种模式</h2><p>包括six BASIC modes 和 six ADDITIONAL modes.<br>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line">5. Modes, introduction        *vim-modes-intro* *vim-modes*</span><br><span class="line"></span><br><span class="line">Vim has six BASIC modes:</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">*Normal* *Normal-mode* *command-mode*</span><br><span class="line">Normal mode   In Normal mode you can enter all the normal editor</span><br><span class="line">commands.  If you start the editor you are in this</span><br><span class="line">mode (unless you have set the &#x27;insertmode&#x27; option,</span><br><span class="line">    see below).  This is also known as command mode.</span><br><span class="line"></span><br><span class="line">Visual mode   This is like Normal mode, but the movement commands</span><br><span class="line">extend a highlighted area.  When a non-movement</span><br><span class="line">command is used, it is executed for the highlighted</span><br><span class="line">area.  See |Visual-mode|.</span><br><span class="line">If the &#x27;showmode&#x27; option is on &quot;-- VISUAL --&quot; is shown</span><br><span class="line">at the bottom of the window.</span><br><span class="line"></span><br><span class="line">Select mode   This looks most like the MS-Windows selection mode.</span><br><span class="line">Typing a printable character deletes the selection</span><br><span class="line">and starts Insert mode.  See |Select-mode|.</span><br><span class="line">If the &#x27;showmode&#x27; option is on &quot;-- SELECT --&quot; is shown</span><br><span class="line">at the bottom of the window.</span><br><span class="line"></span><br><span class="line">Insert mode   In Insert mode the text you type is inserted into the</span><br><span class="line">buffer.  See |Insert-mode|.</span><br><span class="line">If the &#x27;showmode&#x27; option is on &quot;-- INSERT --&quot; is shown</span><br><span class="line">at the bottom of the window.</span><br><span class="line"></span><br><span class="line">Command-line mode In Command-line mode (also called Cmdline mode) you</span><br><span class="line">Cmdline mode    can enter one line of text at the bottom of the</span><br><span class="line">window.  This is for the Ex commands, &quot;:&quot;, the pattern</span><br><span class="line">search commands, &quot;?&quot; and &quot;/&quot;, and the filter command,</span><br><span class="line">&quot;!&quot;.  |Cmdline-mode|</span><br><span class="line"></span><br><span class="line">Ex mode     Like Command-line mode, but after entering a command</span><br><span class="line">you remain in Ex mode.  Very limited editing of the</span><br><span class="line">command line.  |Ex-mode|</span><br><span class="line"></span><br><span class="line">There are six ADDITIONAL modes.  These are variants of the BASIC modes:</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">*Operator-pending* *Operator-pending-mode*</span><br><span class="line">Operator-pending mode This is like Normal mode, but after an operator</span><br><span class="line">command has started, and Vim is waiting for a &#123;motion&#125;</span><br><span class="line">to specify the text that the operator will work on.</span><br><span class="line"></span><br><span class="line">Replace mode    Replace mode is a special case of Insert mode.  You</span><br><span class="line">can do the same things as in Insert mode, but for</span><br><span class="line">each character you enter, one character of the existing</span><br><span class="line">text is deleted.  See |Replace-mode|.</span><br><span class="line">If the &#x27;showmode&#x27; option is on &quot;-- REPLACE --&quot; is</span><br><span class="line">shown at the bottom of the window.</span><br><span class="line"></span><br><span class="line">Virtual Replace mode  Virtual Replace mode is similar to Replace mode, but</span><br><span class="line">instead of file characters you are replacing screen</span><br><span class="line">real estate.  See |Virtual-Replace-mode|.</span><br><span class="line">If the &#x27;showmode&#x27; option is on &quot;-- VREPLACE --&quot; is</span><br><span class="line">shown at the bottom of the window.</span><br><span class="line"></span><br><span class="line">Insert Normal mode  Entered when CTRL-O given in Insert mode.  This is</span><br><span class="line">like Normal mode, but after executing one command Vim</span><br><span class="line">returns to Insert mode.</span><br><span class="line">If the &#x27;showmode&#x27; option is on &quot;-- (insert) --&quot; is</span><br><span class="line">shown at the bottom of the window.</span><br><span class="line"></span><br><span class="line">Insert Visual mode  Entered when starting a Visual selection from Insert</span><br><span class="line">mode, e.g., by using CTRL-O and then &quot;v&quot;, &quot;V&quot; or</span><br><span class="line">CTRL-V.  When the Visual selection ends, Vim returns</span><br><span class="line">to Insert mode.</span><br><span class="line">If the &#x27;showmode&#x27; option is on &quot;-- (insert) VISUAL --&quot;</span><br><span class="line">is shown at the bottom of the window.</span><br><span class="line"></span><br><span class="line">Insert Select mode  Entered when starting Select mode from Insert mode.</span><br><span class="line">E.g., by dragging the mouse or &lt;S-Right&gt;.</span><br><span class="line">When the Select mode ends, Vim returns to Insert mode.</span><br><span class="line">If the &#x27;showmode&#x27; option is on &quot;-- (insert) SELECT --&quot;</span><br><span class="line">is shown at the bottom of the window.</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://weibeld.net/">weibeld博客笔记</a></li>
+<li><a target="_blank" rel="noopener" href="http://vimdoc.sourceforge.net/htmldoc/intro.html">vim文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ibm.com/developerworks/cn/linux/l-cn-tip-vim/index.html">技巧：快速提高 Vi/Vim 使用效率的原则与途径</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/u010454729/article/details/49496381">linux 工具——终端分屏与vim分屏</a></li>
+</ul>
+</blockquote>
+
+            
+                
+
+            
+        </div>
+        <div class="post-tool">
+            <a class="btn-thumbs-up" href="javascript:void(0);" data-cid="52" title="谢谢老板╰(*°▽°*)╯">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i> 打赏
+            </a>
+        </div>
+        
+        <div class="post-tags">标签：
+            
+            <a href="/tags/Linux/">Linux</a>
+            
+            <a href="/tags/Vim/">Vim</a>
+            
+        </div>
+        
+    </article>
+    
+        <p style="text-align: center">本文代表个人观点，内容仅供参考。若有不恰当之处，望不吝赐教！</p>
+    
+    
+    
+    
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/honjun/hexo-helper-tocbot/css/tocbot.css"><style>
+    .js-toc {
+        width: 200px;
+        height: auto;
+        z-index: 98;
+        background-color: rgba(255,255,255,0);
+        transform: translateX(0);
+        right: 10%;
+        top: 60px;
+        position: fixed;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+  </style><script src="https://cdn.jsdelivr.net/gh/honjun/hexo-helper-tocbot/js/tocbot.js"></script><div class="js-toc"></div><script type="text/javascript">
+    tocbot.init({"enable":true,"contentSelector":".post-content","scrollSmooth":true,"headingSelector":"h1, h2, h3, h4, h5","headingsOffset":45,"scrollSmoothOffset":-45,"tocSelector":".js-toc","ignoreSelector":".js-toc-ignore","linkClass":"toc-link","extraLinkClasses":"","activeLinkClass":"is-active-link","listClass":"toc-list","extraListClasses":"","isCollapsedClass":"is-collapsed","collapsibleClass":"is-collapsible","listItemClass":"toc-list-item","activeListItemClass":"is-active-li","collapseDepth":0,"scrollSmoothDuration":420,"throttleTimeout":50,"positionFixedSelector":null,"positionFixedClass":"is-position-fixed","fixedSidebarOffset":"auto","includeHtml":false,"onClick":false,"orderedList":true,"scrollContainer":null})
+  </script>
+</div>
+
+<script src="/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner" style="text-align: center">
+<div>
+    <p class="hitokoto"></p>
+</div>
+<script type="text/javascript" src="/js/hitokoto.js"></script>
+        <p>
+            <a href="/about"  title="关于">关于</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/help" title="帮助" >帮助</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/links" title="友链">友链</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/sitemap.xml" title="地图">地图</a>
+        </p>
+        <p>
+            本站已建立&nbsp<a href="/timeline" id="siteBuildingTime"></a>&nbsp天，<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="licence">采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议创作</a><br/>
+            ©2019-<span id="cpYear"></span> 基于&nbsp<a href="http://hexo.io" target="_blank" rel="nofollow">Hexo</a>
+            ，主题采用&nbsp&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="bookmark">JSimple</a>
+            ，作者&nbsp<a href="http://blog.fronna.com" target="_blank" rel="friend">方雷</a>
+            ，Hosted by <a href="https://pages.github.com/" target="_blank" rel="nofollow">GitHub Pages</a>
+        </p>
+    </div>
+</footer>
+
+<script src="/js/SimpleCore.js"></script>
+
+
+
+
+</div>
+<!-- search pop -->
+<div class="popup search-popup local-search-popup">
+    <div class="local-search-header clearfix">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+        <div class="local-search-input-wrapper">
+            <input id="local-search-input"
+                   spellcheck="false"
+                   type="text"
+                   autocomplete="off"
+                   placeholder="请输入查询关键词"/>
+        </div>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+<!--
+<link rel="stylesheet" href="/dist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/dist/music.js"></script>
+-->
+<script>
+    $(function () {
+        var jsi_config = {
+            buildingTime: '08/01/2019',
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            snsQRCode: '/images/sns-qrcode.png',
+            donateImg: '/images/donate-qr.png',
+            localSearch: { dbPath: '' },
+            readMode: 'day'
+        };
+        
+        SimpleCore.init(jsi_config);
+        
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+        
+    });
+</script>
+</body>
+</html>
